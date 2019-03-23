@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:layout_margin="10dp">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/img_sanpham_giohang"
+        android:layout_marginRight="10dp"
+        android:background="@mipmap/ic_launcher"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/txt_tenSanpham"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Iphone Xr 999gb Rose"
+            android:textColor="#000"
+            />
+        <TextView
+            android:id="@+id/txt_chitiet1_Sanpham"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Apple Inc."
+            android:textColor="#7c7a7a"
+            />
+        <TextView
+            android:id="@+id/txt_chitiet2_Sanpham"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="50.000 đ"
+            android:textColor="#de2626"
+            android:textSize="20dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_giamSanpham_giohang"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="-"
+                android:textColor="#000"
+                android:background="#fff"/>
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:textColor="#000"
+                android:text="0"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:textSize="17dp"
+                />
+            <Button
+                android:id="@+id/btn_tangSanpham_giohang"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="+"
+                android:textColor="#000"
+                android:background="#fff"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

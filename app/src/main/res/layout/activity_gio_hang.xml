@@ -1,9 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.giohang.ActivityGioHang">
+    tools:context=".view.giohang.ActivityGioHang"
+    android:orientation="vertical"
+    android:background="#e1e1e1">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Giỏ Hàng Của Tôi(1)"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:layout_margin="5dp" />
+
+    <ListView
+        android:layout_below="@+id/txt_title"
+        android:id="@+id/listview_DonHang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:dividerHeight="4dp">
+
+    </ListView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:elevation="5dp"
+        android:layout_margin="5dp"
+        android:layout_alignParentBottom="true"
+        android:background="#f9ecec"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tổng Cộng: "
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:layout_weight="2"/>
+        <TextView
+            android:id="@+id/txt_Price_Giohang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="000000 đ"
+            android:textSize="20dp"
+            android:textColor="#f53c3c"
+            android:layout_weight="2"/>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="@drawable/login"
+            android:text="Thanh Toán"
+            android:textColor="#fff"
+            android:textSize="10dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</RelativeLayout>
