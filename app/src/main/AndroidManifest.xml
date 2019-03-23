@@ -14,15 +14,15 @@
         <activity android:name=".view.dangnhap.ActivityDangNhap" />
         <activity android:name=".view.thanhtoan.ActivityThanhToan" />
         <activity android:name=".view.giohang.ActivityGioHang" >
+
+        </activity>
+        <activity android:name=".view.thongtinsanpham.ActivityThongTinSanPham" />
+        <activity android:name=".view.trangchu.ActivityTrangChu">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity android:name=".view.thongtinsanpham.ActivityThongTinSanPham" />
-        <activity android:name=".view.trangchu.ActivityTrangChu">
-
         </activity>
     </application>
 
